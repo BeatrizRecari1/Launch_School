@@ -216,3 +216,79 @@
     Had it been numbers, it would have evaluated to false
 
   */
+
+// VARIABLES EXERCISES
+
+/* 1. Write a program named greeter.js that greets 'Victor' three times. Your program should use a variable and not hard code the string value 'Victor' in each greeting. Here's an example run of the program
+
+    let name = 'Victor';
+
+    console.log(`Good Morning, ${name}.`);
+    console.log(`Good Afternoon, ${name}.`);
+    console.log(`Good Evening, ${name}.`);
+
+  */
+
+/* 2. Write a program named age.js that includes someone's age and then calculates and reports the future age in 10, 20, 30 and 40 years. Below is the output for someone 20 years old
+
+    let age = 36;
+
+    console.log(`You are ${age} years old.`);
+    console.log(`In 10 years, you will be ${age + 10} years old.`);
+    console.log(`In 20 years, you will be ${age + 20} years old.`);
+    console.log(`In 30 years, you will be ${age + 30} years old`);
+    console.log(`In 40 years, you will be ${age + 40} years old.`);
+
+  */
+
+/* 3. What happens when you run the following program? Why do we get that result?
+
+    {
+      let foo = 'bar'
+    }
+
+    console.log(foo)
+
+    --> The program outputs an error since foo is out of scope: the let statement creates variables with block scope, which limits the visibility of the variable to the block
+
+  */
+
+/* 4. What happens when you run the following code? Why?
+
+    const NAME = 'Victor';
+    console.log('Good Morning, ' + NAME); // Output: Good Morning, Victor 
+    console.log('Good Afternoon, ' + NAME); // Output: Good Morning, Victor 
+    console.log('Good Evening, ' + NAME); // Output: Good Morning, Victor
+
+    NAME = 'Joe'; // Type Error: constants cannot be reassigned
+    console.log('Good Morning, ' + NAME); // Code won't run
+    console.log('Good Afternoon, ' + NAME); // Code won't run
+    console.log('Good Evening, ' + NAME); // Code won't run
+
+    */
+
+/* 5. What does this program log to the console? Why?
+
+    let foo = 'bar';
+    {
+    let foo = 'qux';
+    }
+
+    console.log(foo);
+
+    --> Line 1 initializes a variable named foo with the value'bar'. Line 2 starts a block, which creates a new scope for let variables. The variable on line 1 is still visible at this point, but line 3 declares a new variable named foo that shadows (hides) the variable from line 1. This second variable gets initialized to 'qux', but it goes out of scope on line 4 when the block ends. That brings foo from line 1 back into scope, so line 6 logs its value: bar.
+
+    */
+
+/* 6. Will this program produce an error when run? Why or why not?
+
+    const FOO = 'bar';
+    {
+    const FOO = 'qux';
+    }
+
+    console.log(FOO);
+
+    --> For the same reason as earlier, the new const FOO = 'qux' comes out of scope on line 4, so const FOO on line 1 comes back in scope and prints 'bar' on the console.
+
+  */
