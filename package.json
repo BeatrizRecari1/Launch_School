@@ -1,0 +1,23 @@
+{
+  "name": "preparations_exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "age.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeatrizRecari1/Launch_School.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeatrizRecari1/Launch_School/issues"
+  },
+  "homepage": "https://github.com/BeatrizRecari1/Launch_School#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

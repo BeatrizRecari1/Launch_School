@@ -292,3 +292,99 @@
     --> For the same reason as earlier, the new const FOO = 'qux' comes out of scope on line 4, so const FOO on line 1 comes back in scope and prints 'bar' on the console.
 
   */
+
+// FUNCTIONS EXERCISES
+
+/* 1. What does this code log to the console? Does executing the foo function affect the output? Why or why not?
+
+    --> The code logs 1 to the console. foo doesn't affect the value assigned to bar on line 1 since JavaScript functions create an inner scope.
+
+*/
+
+/* 2. In the exercises for the previous chapter, you wrote a dynamic greeter program named greeter.js. Add a function to this program that solicits the user's first and last names in separate invocations; the function should return the appropriate name as a string. Use the return values to greet the user with their full name.
+    
+    --> Reference the greeter.js file for solution.
+
+*/
+
+/* 3. Write a program that uses a multiply function to multiply two numbers and returns the result. Ask the user to enter the two numbers, then output the numbers and result as a simple equation.
+
+    function multiply(left, right) {
+      return left * right
+    }
+
+    function getNumber(prompt) {
+      let rlSync = require('readline-sync')
+      return Number(rlSync.question(prompt))
+    }
+
+    let first = getNumber('Enter the first number ')
+    let right = getNumber('Enter the second number ')
+    console.log(`${left} * ${right} = ${multiply(left, right)}`)
+
+  */
+
+/* 4. What does the following code log to the console?
+
+    --> Nothing, the return statement finishes the program before the console.log() statement. It will return undefined but won't log anything.
+
+*/
+
+/* 5. What does the following code log to the console?
+
+ --> It also doesn't log anything. It returns Yipeee!!!! but won't log anything.
+
+*/
+
+/* 6. In the code shown below, identify the following items:
+
+    --> the function arguments: line 6 numbers 2, 3, 4
+    --> the function body: everything inside the curly braces (with or without them)
+    --> the function declaration: lines 1 through 4
+    --> the function invocation: multiplyNumbers(2, 3, 4)
+    --> the function name: multiplyNumbers
+    --> the function parameters: num1, num2, num3 in line 1
+    --> the function return value: The function's return value is determined by multiplying the arguments together. That value is initially stored in the local variable result in the function's body. It gets assigned to product after the function returns.
+    --> the names of all variables in this program: multiplyNumbers, result, product, num1, num2, num3
+
+*/
+
+/* 7. Without running the following code, what do you think it will output?
+
+    --> Hello, undefined (when provided too few arguments, those parameters without a value get assigned undefined)
+
+*/
+
+/* 8. Without running the following code, what do you think it will output?
+
+    --> Only the arguments 42 and 3.1415 since those are assigned to the parameters bar and qux. Any extra arguments will be ignored.
+
+*/
+
+/* 9. Identify all of the variables named on each line of the following code. You may assume that question is the name of a built-in function in JavaScript (it is not, so this code won't work as written).
+
+    --> Line 1: multiply, left, right: The function name and the parameter names are all variable names.
+    --> Line 2: product, left, right
+    --> Line 3: product
+    --> Line 6: getNumber, prompt
+    --> Line 7: parseFloat, question, prompt
+    --> Line 10: left, getNumber
+    --> Line 11: right, getNumber
+    --> Line 12: console, left, right, multiply
+
+*/
+
+/* 10. Using the code from Exercise 9, classify each variable name as either global or local. For our purposes here, you may assume that the code from Exercise 9 is the entire program.
+
+    --> Global variables: multiply, getNumber, left, right, console, parseFloat, question
+    --> Local variables: product, left, right, prompt
+    
+*/
+
+/* 11. Using the code from Exercise 9, are the left and right variables on lines 1 and 2 the same as the left and right variables on lines 10-12? Explain your reasoning.
+
+    --> They are not:
+        -> left and right on lines 10-12 are global variables, they are declared at the top of the program.
+        -> left and right in lines 1 and 2 are local since they are parameters and they will always be binded to the local scope of its function.
+
+*/

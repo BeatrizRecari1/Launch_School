@@ -1,4 +1,11 @@
-let name = "Victor";
-console.log(`Good Morning, ${name}.`);
-console.log(`Good Afternoon, ${name}.`);
-console.log(`Good Evening, ${name}.`);
+// Solution to exercise 2 from the functions chapter
+
+function getName(prompt) {
+  let rlSync = require("readline-sync");
+  let name = rlSync.question(prompt);
+  return name;
+}
+
+let firstName = getName("What is your first name? ");
+let lastName = getName("What is your last name? ");
+console.log(`Hello, ${firstName} ${lastName}`);
