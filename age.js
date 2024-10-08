@@ -1,3 +1,5 @@
+// Solution to exercise 3 of Input/Output chapter
+
 let rlSync = require("readline-sync");
 
 let age = Number(rlSync.question("How old are you?\n"));
